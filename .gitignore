@@ -1,1 +1,5 @@
+# Environments
 .env
+
+# Windows thumbnail cache files
+Thumbs.db
