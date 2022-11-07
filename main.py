@@ -26,7 +26,8 @@ session = Session(
     aws_secret_access_key=aws_secret_access_key,
 )
 polly = session.client("polly")
-format, voice_id, src_path, output_voice_path = 'mp3', 'Joanna', 'ReadText.ssml', 'speech.mp3'
+format, voice_id = 'mp3', 'Joanna'
+src_path, output_voice_path = 'ReadText.ssml', 'speech.mp3'
 with open(src_path) as f:
     text = f.read()
 
